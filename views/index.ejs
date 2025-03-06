@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Employee</title>
+</head>
+<body>
+  <h2>Add New Employee</h2>
+  <form action="/employees" method="POST">
+    <label>Name:</label>
+    <input type="text" name="name" required><br><br>
+
+    <label>Age:</label>
+    <input type="number" name="age" required><br><br>
+
+    <label>Email:</label>
+    <input type="email" name="email" required><br><br>
+
+    <label>Date of Birth:</label>
+    <input type="date" name="dob" required><br><br>
+
+    <label>Experience (Years):</label>
+    <input type="number" name="experience" min="0" required><br><br>
+
+    <label>Gender:</label>
+    <input type="radio" name="gender" value="Male">Male
+    <input type="radio" name="gender" value="Female">Female
+    <input type="radio" name="gender" value="Other">Other<br><br>
+
+    <label>Department:</label>
+    <select name="department" required>
+      <option value="">Select</option>
+      <option value="HR">HR</option>
+      <option value="IT">IT</option>
+      <option value="Finance">Finance</option>
+      <option value="Marketing">Marketing</option>
+    </select><br><br>
+
+    <label>Skills:</label><br>
+    <input type="checkbox" name="skills" value="JavaScript">JavaScript
+    <input type="checkbox" name="skills" value="Python">Python
+    <input type="checkbox" name="skills" value="Java">Java
+    <input type="checkbox" name="skills" value="C++">C++
+    <br><br>
+
+    <label>Address:</label><br>
+    <textarea name="address" rows="3" cols="30"></textarea><br><br>
+
+    <button type="submit">Add Employee</button>
+  </form>
+  <br>
+  <a href="/employees">Go to Employees List</a>
+</body>
+</html>
